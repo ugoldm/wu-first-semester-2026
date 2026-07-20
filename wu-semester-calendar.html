@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>Digital Economy Mobile Filter Panel</title>
+<title>Digital Economy Mobile Month Grid</title>
 <style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{width:100%;height:100%;margin:0}body{box-sizing:border-box;padding:0;background:inherit}iframe{display:block;width:100%;max-width:none;height:100vh;margin:0;border:0}</style>
 </head>
 <body>
-<iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" referrerpolicy="no-referrer" title="Digital Economy Mobile Filter Panel" srcdoc="&lt;!doctype html&gt;
+<iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" referrerpolicy="no-referrer" title="Digital Economy Mobile Month Grid" srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
 &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;Digital Economy Mobile Filter Panel&lt;/title&gt;
+&lt;title&gt;Digital Economy Mobile Month Grid&lt;/title&gt;
 &lt;style&gt;:root {
   color-scheme: light dark;
   background-color: var(--background) !important;
@@ -976,6 +976,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 .wu-event-time { white-space: nowrap; color: var(--muted-foreground); }
 .wu-event-name-wrap { display: block; min-width: 0; }
 .wu-event-name { color: var(--foreground); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.wu-event-name-short { display: none; }
 .wu-conflict-mark { color: var(--destructive); font-weight: 500; }
 .wu-detail { display: grid; gap: 0; }
 .wu-modal { width: min(680px, calc(100% - 32px)); max-width: none; max-height: calc(100% - 32px); padding: 0; border: 0; border-radius: 18px; overflow-x: hidden; overflow-y: auto; background: #FFFFFF; color: #181818; box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28); --foreground: #181818; --card: #FFFFFF; --card-foreground: #181818; --muted-foreground: #5F6875; --border: #E2E5E9; --secondary: #F5F6F8; --secondary-foreground: #181818; --destructive: #B42318; }
@@ -1030,12 +1031,22 @@ html&gt;body{padding:0}&lt;/style&gt;
   #wu-schedule-app .viz-grid { grid-template-columns: 1fr; }
   #wu-schedule-app .viz-controls { display: grid; grid-template-columns: 1fr; }
   .wu-nav { justify-content: flex-start; }
-  .wu-weekdays span { padding: 5px 2px; }
-  .wu-weekdays { display: none; }
-  .wu-calendar { display: block; border-left: 0; }
-  .wu-day { min-height: 0; padding: 7px 0; display: grid; grid-template-columns: 34px minmax(0, 1fr); border-right: 0; }
-  .wu-day.is-outside, .wu-day.is-empty { display: none; }
-  .wu-day-events { overflow: visible; }
+  .wu-weekdays span { padding: 6px 2px; }
+  .wu-weekdays { display: grid; }
+  .wu-calendar { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); border-left: 1px solid var(--border); }
+  .wu-day { min-height: 82px; padding: 4px 3px; display: flex; border-right: 1px solid var(--border); }
+  .wu-day.is-outside { display: flex; }
+  .wu-day.is-empty { display: flex; }
+  .wu-day-number { width: 100%; text-align: right; }
+  .wu-day-events { gap: 2px; overflow: hidden; }
+  .wu-day-events .btn { min-height: 0; padding: 2px 3px; border-radius: 4px; background: color-mix(in srgb, var(--series-color) 16%, transparent); }
+  .wu-event-line { gap: 2px; align-items: center; }
+  .wu-event-swatch { width: 3px; height: 12px; }
+  .wu-event-text { display: block; overflow: hidden; }
+  .wu-event-time { display: none; }
+  .wu-event-name { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .wu-event-name-full { display: none; }
+  .wu-event-name-short { display: inline; }
   .wu-course-meta { grid-template-columns: 1fr; }
   .wu-modal-body { gap: 16px; padding: 18px; }
   .wu-event-hero { grid-template-columns: 1fr; gap: 12px; }
@@ -1229,10 +1240,12 @@ html&gt;body{padding:0}&lt;/style&gt;
       const entries = visible.filter(e =&gt; e.date === date).sort((a,b) =&gt; a.start_time.localeCompare(b.start_time));
       const buttons = entries.map(e =&gt; {
         const conflict = isVisibleConflict(e);
-        return `&lt;button type=&quot;button&quot; class=&quot;btn btn-block&quot; data-event-id=&quot;${e.id}&quot; aria-label=&quot;${esc(e.course)} ${esc(e.start_time)}–${esc(e.end_time)}&quot;&gt;&lt;span class=&quot;wu-event-line&quot;&gt;&lt;span class=&quot;wu-event-swatch&quot; style=&quot;--series-color:${courseColor[e.course]}&quot;&gt;&lt;/span&gt;&lt;span class=&quot;wu-event-text&quot;&gt;&lt;span class=&quot;wu-event-time&quot;&gt;${esc(e.start_time)}–${esc(e.end_time)}&lt;/span&gt;&lt;span class=&quot;wu-event-name-wrap&quot;&gt;&lt;span class=&quot;wu-event-name&quot;&gt;${esc(e.course)}${esc(group(e))}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;${conflict ? &#x27;&lt;span class=&quot;wu-conflict-mark&quot; aria-label=&quot;Есть пересечение&quot;&gt;!&lt;/span&gt;&#x27; : &#x27;&#x27;}&lt;/span&gt;&lt;/button&gt;`;
+        return `&lt;button type=&quot;button&quot; class=&quot;btn btn-block&quot; style=&quot;--series-color:${courseColor[e.course]}&quot; data-event-id=&quot;${e.id}&quot; aria-label=&quot;${esc(e.course)} ${esc(e.start_time)}–${esc(e.end_time)}&quot;&gt;&lt;span class=&quot;wu-event-line&quot;&gt;&lt;span class=&quot;wu-event-swatch&quot; style=&quot;--series-color:${courseColor[e.course]}&quot;&gt;&lt;/span&gt;&lt;span class=&quot;wu-event-text&quot;&gt;&lt;span class=&quot;wu-event-time&quot;&gt;${esc(e.start_time)}–${esc(e.end_time)}&lt;/span&gt;&lt;span class=&quot;wu-event-name-wrap&quot;&gt;&lt;span class=&quot;wu-event-name&quot;&gt;&lt;span class=&quot;wu-event-name-full&quot;&gt;${esc(e.course)}${esc(group(e))}&lt;/span&gt;&lt;span class=&quot;wu-event-name-short&quot;&gt;${esc(short[e.course] || e.course)}${esc(group(e))}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;${conflict ? &#x27;&lt;span class=&quot;wu-conflict-mark&quot; aria-label=&quot;Есть пересечение&quot;&gt;!&lt;/span&gt;&#x27; : &#x27;&#x27;}&lt;/span&gt;&lt;/button&gt;`;
       }).join(&#x27;&#x27;);
       html += `&lt;div class=&quot;wu-day${entries.length ? &#x27;&#x27; : &#x27; is-empty&#x27;}&quot; role=&quot;gridcell&quot; aria-label=&quot;${date}&quot;&gt;&lt;span class=&quot;wu-day-number text-small&quot;&gt;${day}&lt;/span&gt;&lt;div class=&quot;wu-day-events&quot;&gt;${buttons}&lt;/div&gt;&lt;/div&gt;`;
     }
+    const trailingDays = (7 - ((firstDow + days) % 7)) % 7;
+    for (let i=0; i&lt;trailingDays; i++) html += &#x27;&lt;div class=&quot;wu-day is-outside&quot; role=&quot;gridcell&quot;&gt;&lt;/div&gt;&#x27;;
     root.querySelector(&#x27;#calendar-grid&#x27;).innerHTML = html;
     root.querySelectorAll(&#x27;[data-event-id]&#x27;).forEach(btn =&gt; btn.addEventListener(&#x27;click&#x27;, () =&gt; { const e = byId[btn.dataset.eventId]; detail(e, isVisibleConflict(e)); }));
     if (typeof lucide !== &#x27;undefined&#x27;) lucide.createIcons({ attrs: { width: 16, height: 16 } });
